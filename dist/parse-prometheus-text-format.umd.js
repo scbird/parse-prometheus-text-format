@@ -363,7 +363,7 @@
 
               lineType = remain.toUpperCase();
             }
-          } else {
+          } else if (instr === 2) {
             throw new InvalidLineError(line);
           }
         } // 100% pure comment line, ignore
